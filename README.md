@@ -1,4 +1,4 @@
-<img src="https://media.giphy.com/media/f7rDDvcOV9n8I/giphy-downsized-large.gif">
+<img src="https://media.giphy.com/media/f7rDDvcOV9n8I/giphy-downsized.gif">
 
 # This is a ReactAssignment!
 
