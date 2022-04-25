@@ -5,7 +5,11 @@ function App() {
     method: "GET",
   });
 
-  return <div className="text-5xl">Testing testing Hej Jennifer</div>;
+  return (
+    <div className="text-5xl">
+      Testing testing Hej Jennifer Hej igen Jennifer
+    </div>
+  );
 }
 
 export default App;
