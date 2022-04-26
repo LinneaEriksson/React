@@ -1,13 +1,12 @@
 import "./App.css";
+import React from "react";
+import RandomDrinks from "./components/RandomDrinks";
+const apikey = process.env.API_KEY;
 
 function App() {
-  fetch(www.thecocktaildb.com / api / json / v1 / 1 / random.php, {
-    method: "GET",
-  });
-
   return (
-    <div className="text-5xl">
-      Testing testing Hej Jennifer Hej igen Jennifer
+    <div>
+      <RandomDrinks />
     </div>
   );
 }
