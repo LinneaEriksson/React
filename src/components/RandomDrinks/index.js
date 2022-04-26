@@ -9,14 +9,19 @@ const RandomDrinks = () => {
     );
     const data = await response.json();
     setRandomDrinks(data.drinks.strDrink);
-
-    return (
-      <div>
-        <h1>{drink} TEST!!!!</h1>
-        <button onClick={getRandomDrinks}>TEST</button>
-      </div>
-    );
+    console.log(data);
   };
+
+  useEffect(() => {
+    getRandomDrinks();
+  }, []);
+
+  return (
+    <div>
+      <h1>{drink} TEST!!!!</h1>
+      <button onClick={getRandomDrinks}>TEST</button>
+    </div>
+  );
 };
 
 export default RandomDrinks;
