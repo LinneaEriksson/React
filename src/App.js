@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <RandomDrinks />
+      <p test></p>
     </div>
   );
 }
