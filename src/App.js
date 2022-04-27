@@ -7,7 +7,10 @@ const apikey = process.env.API_KEY;
 function App() {
   return (
     <div>
-      <Aztro />
+      <section className="startPageSection">
+        <Aztro />
+        <div className="test">test</div>
+      </section>
     </div>
   );
 }
