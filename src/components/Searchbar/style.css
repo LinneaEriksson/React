@@ -1,0 +1,32 @@
+.searchBarContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.searchField {
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 2px solid white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchButton {
+  background-color: rgb(231, 148, 148);
+
+  color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid rgb(231, 148, 148);
+  font-size: 16px;
+  padding: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}

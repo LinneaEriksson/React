@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css";
 
 class Aztro extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Aztro extends Component {
 
   render() {
     return (
-      <div>
+      <div className="astroBox">
         Current Date: {this.state.json.current_date} <br />
         Compatibility: {this.state.json.compatibility} <br />
         Lucky Number: {this.state.json.lucky_number} <br />
