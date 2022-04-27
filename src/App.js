@@ -1,12 +1,13 @@
 import "./App.css";
 import React from "react";
-import RandomDrinks from "./components/RandomDrinks";
+
+import Aztro from "./components/Aztro";
 const apikey = process.env.API_KEY;
 
 function App() {
   return (
     <div>
-      <RandomDrinks />
+      <Aztro />
     </div>
   );
 }
