@@ -5,7 +5,15 @@
   text-align: center;
 }
 
+.zodiacWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .zodiacContainer {
   padding: 10px;
   background-color: beige;
+  width: 200px;
+  margin: 50px;
 }

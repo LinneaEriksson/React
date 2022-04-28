@@ -37,13 +37,16 @@ class Aztro extends Component {
     ];
 
     return zodiacs.map((zodiac) => (
-      <div className="zodiacContainer">{zodiac}</div>
+      <div className="zodiacContainer">
+        <img src="/public/images/leo.jpg" />
+        {zodiac}
+      </div>
     ));
   }
 
   render() {
     return (
-      <div>
+      <div className="zodiacWrapper">
         {this.zodiacArrays()}
         <div className="astroBox">
           Current Date: {this.state.json.current_date} <br />
