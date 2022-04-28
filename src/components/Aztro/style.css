@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .zodiacContainer {
@@ -16,4 +17,8 @@
   background-color: beige;
   width: 200px;
   margin: 50px;
+}
+
+img {
+  width: 180px;
 }
