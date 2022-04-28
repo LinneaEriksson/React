@@ -38,7 +38,7 @@ class Aztro extends Component {
 
     return zodiacs.map((zodiac) => (
       <div className="zodiacContainer">
-        <img src="/public/images/leo.jpg" />
+        <img src="images/leo.jpg" />
         {zodiac}
       </div>
     ));
