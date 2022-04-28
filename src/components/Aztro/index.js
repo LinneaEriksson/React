@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "../Button";
 import "./style.css";
 
 class Aztro extends Component {
@@ -40,6 +41,7 @@ class Aztro extends Component {
       <div className="zodiacContainer">
         <img src={`/images/${zodiac}.jpg`} />
         {zodiac}
+        <Button text="Read more" />
       </div>
     ));
   }

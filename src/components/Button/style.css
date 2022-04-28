@@ -1,0 +1,17 @@
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: #d3385e;
+  border: none;
+  border-radius: 8px;
+  line-height: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  /* font-family: "Nunito Sans"; */
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
