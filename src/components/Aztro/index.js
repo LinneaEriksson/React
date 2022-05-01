@@ -9,7 +9,7 @@ class Aztro extends Component {
       json: {},
     };
   }
-
+  const zodiac = "aries";
   componentDidMount() {
     const URL = `https://aztro.sameerkumar.website/?sign=cancer&day=yesterday`;
     fetch(URL, {
@@ -24,6 +24,7 @@ class Aztro extends Component {
   render() {
     return (
       <div className="astroBox">
+        <img src={`/images/${zodiac}.jpg`} />
         Current Date: {this.state.json.current_date} <br />
         Compatibility: {this.state.json.compatibility} <br />
         Lucky Number: {this.state.json.lucky_number} <br />

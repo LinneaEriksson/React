@@ -22,11 +22,15 @@ const Zodiacs = () => {
     <div className="zodiacContainer">
       <img src={`/images/${zodiac}.jpg`} />
       {zodiac}
-      <Button text="Read more" />
+      <form>
+        <Button
+          type="submit"
+          /* onClick={() => navigate("/ZodiacInfo")} */
+          text="Read more"
+        />
+      </form>
     </div>
   ));
 };
 
 export default Zodiacs;
-
-//onClick={() => navigate("/Zodiacinfo")}

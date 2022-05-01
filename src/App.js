@@ -10,7 +10,7 @@ function App() {
     <div>
       <section className="startPageSection">
         {/* <SearchBar /> */}
-        <Zodiacs />
+        {/* <Zodiacs /> */}
         <Aztro />
       </section>
     </div>
