@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from "../Button";
 import "./style.css";
 import ZodiacInfo from "../../pages/ZodiacInfo";
+import { Link } from "react-router-dom";
 
 const Zodiacs = () => {
   const zodiacs = [
@@ -24,12 +25,8 @@ const Zodiacs = () => {
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
 
       <form>
-        <Button
-          type="submit"
-          /* onClick={() => navigate("/ZodiacInfo")} */
-          text="Read more"
-        >
-          <a href={ZodiacInfo}></a>
+        <Button type="submit">
+          <Link to="zodiac">Click to view our about page</Link>
         </Button>
       </form>
     </div>
