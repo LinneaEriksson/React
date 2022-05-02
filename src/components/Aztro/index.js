@@ -1,11 +1,13 @@
 import React, { Component, useState } from "react";
 import "./style.css";
+
 import Button from "../Button";
 
 let day = "today";
 const changeDay = (dayToChange) => {
   day = dayToChange;
 };
+
 
 class Aztro extends Component {
   constructor(props) {
