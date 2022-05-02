@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import "./style.css";
+<<<<<<< Updated upstream
 
 import Button from "../Button";
 
