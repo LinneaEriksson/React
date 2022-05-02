@@ -25,11 +25,11 @@ const Zodiacs = () => {
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
 
       <form>
-        <Button type="submit">
-          <Link className="link" to="zodiac">
-            Read more
-          </Link>
-        </Button>
+        {/* <Button type="submit"> */}
+        <Link className="link" to="zodiac">
+          Read more
+        </Link>
+        {/* </Button> */}
       </form>
     </div>
   ));
