@@ -22,9 +22,11 @@ const Zodiacs = () => {
   return zodiacs.map((zodiac) => (
     <div className="zodiacContainer">
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
+
       <Link className="link" to="zodiac">
         <Button buttonText="Read more" />
       </Link>
+
     </div>
   ));
 };

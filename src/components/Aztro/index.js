@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import Zodiacs from "../Zodiacs";
 import "./style.css";
+import { zodiac } from Zodiacs;
 
 class Aztro extends Component {
   constructor(props) {
@@ -10,7 +12,7 @@ class Aztro extends Component {
   }
 
   componentDidMount() {
-    const URL = `https://aztro.sameerkumar.website/?sign=cancer&day=yesterday`;
+    const URL = `https://aztro.sameerkumar.website/?sign=${zodiac}&day=yesterday`;
     fetch(URL, {
       method: "POST",
     })
