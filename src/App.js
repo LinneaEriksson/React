@@ -1,25 +1,19 @@
 import "./App.css";
 import React from "react";
-import Aztro from "./components/Aztro";
-import Zodiacs from "./components/Zodiacs";
-import { Routes, Route } from "react-router-dom";
 import ZodiacInfo from "./pages/ZodiacInfo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 // import SearchBar from "./components/Searchbar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Routes>
         <Route path="/zodiac" element={<ZodiacInfo />} />
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-      <section className="startPageSection">
-        {/* <SearchBar /> */}
-        <Zodiacs />
-        <Aztro />
-      </section>
-    </div>
+    </BrowserRouter>
   );
 }
 
