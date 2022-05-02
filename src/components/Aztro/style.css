@@ -37,3 +37,9 @@
   margin-bottom: 30px;
   width: 250px;
 }
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

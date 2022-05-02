@@ -1,5 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./style.css";
+import Button from "../Button";
+
+let day = "today";
+const changeDay = (dayToChange) => {
+  day = dayToChange;
+};
 
 class Aztro extends Component {
   constructor(props) {
@@ -10,7 +16,7 @@ class Aztro extends Component {
   }
 
   componentDidMount() {
-    const URL = `https://aztro.sameerkumar.website/?sign=cancer&day=yesterday`;
+    const URL = `https://aztro.sameerkumar.website/?sign=cancer&day=${day}`;
     fetch(URL, {
       method: "POST",
     })
@@ -27,7 +33,6 @@ class Aztro extends Component {
           <img src={`/images/cancer.jpg`} alt={`zodiac cancer`} />
         </div>
         <div>
-          {" "}
           <span className="astroHeadline">Current Date:</span>{" "}
           {this.state.json.current_date} <br />
           <span className="astroHeadline"> Compatibility: </span>
@@ -44,6 +49,17 @@ class Aztro extends Component {
           {this.state.json.mood} <br />
           <span className="astroHeadline"> Description:</span>{" "}
           {this.state.json.description} <br />
+          <div className="buttonContainer">
+            <Button
+              onClick={() => changeDay("yesterday")}
+              text="yesterday"
+            ></Button>
+            <Button onClick={() => changeDay("today")} text="today"></Button>
+            <Button
+              onClick={() => changeDay("tomorrow")}
+              text="tomorrow"
+            ></Button>
+          </div>
         </div>
       </div>
     );
