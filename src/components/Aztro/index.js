@@ -8,6 +8,11 @@ const changeDay = (dayToChange) => {
   day = dayToChange;
 };
 
+=======
+import { Link } from "react-router-dom";
+import Button from "./../Button";
+/* import { zodiac } from Zodiacs; */
+>>>>>>> Stashed changes
 
 class Aztro extends Component {
   constructor(props) {
@@ -31,6 +36,11 @@ class Aztro extends Component {
   render() {
     return (
       <div className="astroBox">
+        <div className="back">
+          <Link className="linkToBack" to="/">
+            <Button text="Go back" bg="#5b5073" fontSize="14px" />
+          </Link>
+        </div>
         <div className="imageFrame">
           <img src={`/images/cancer.jpg`} alt={`zodiac cancer`} />
         </div>
