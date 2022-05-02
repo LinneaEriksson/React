@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/zodiac" element={<ZodiacInfo />} />
+        <Route path="/zodiac" element={<ZodiacInfo />} exact />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
