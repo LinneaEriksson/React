@@ -39,12 +39,11 @@
   width: 250px;
 }
 
-<<<<<<< Updated upstream
 .buttonContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-=======
+}
 .back {
   position: absolute;
   margin-top: -30px;
@@ -57,5 +56,4 @@
 
 .linkToBack {
   color: white;
->>>>>>> Stashed changes
 }

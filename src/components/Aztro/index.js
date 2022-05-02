@@ -1,19 +1,12 @@
 import React, { Component, useState } from "react";
 import "./style.css";
-<<<<<<< Updated upstream
-
-import Button from "../Button";
+import { Link } from "react-router-dom";
+import Button from "./../Button";
 
 let day = "today";
 const changeDay = (dayToChange) => {
   day = dayToChange;
 };
-
-=======
-import { Link } from "react-router-dom";
-import Button from "./../Button";
-/* import { zodiac } from Zodiacs; */
->>>>>>> Stashed changes
 
 class Aztro extends Component {
   constructor(props) {
