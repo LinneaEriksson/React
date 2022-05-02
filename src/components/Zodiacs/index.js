@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Button from "./../Button";
+import { createContext } from "react";
+
+const Name = createContext();
 
 const Zodiacs = () => {
   const zodiacs = [
