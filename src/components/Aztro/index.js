@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Zodiacs from "../Zodiacs";
 import "./style.css";
 /* import { zodiac } from Zodiacs; */
 
