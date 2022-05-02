@@ -1,7 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { Component, UseState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Button from "./../Button";
+
+/* const [day, setDay] = useState("today"); */
 
 let day = "today";
 const changeDay = (dayToChange) => {
@@ -17,7 +19,7 @@ class Aztro extends Component {
   }
 
   componentDidMount() {
-    const URL = `https://aztro.sameerkumar.website/?sign=cancer&day=${day}`;
+    const URL = `https://aztro.sameerkumar.website/?sign=${this.props.name}&day=${day}`;
     fetch(URL, {
       method: "POST",
     })
@@ -36,7 +38,10 @@ class Aztro extends Component {
           </Link>
         </div>
         <div className="imageFrame">
-          <img src={`/images/cancer.jpg`} alt={`zodiac cancer`} />
+          <img
+            src={`/images/${this.props.name}.jpg`}
+            alt={`zodiac ${this.props.name}`}
+          />
         </div>
         <div>
           <span className="astroHeadline">Current Date:</span>{" "}
