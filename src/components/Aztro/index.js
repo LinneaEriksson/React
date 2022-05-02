@@ -24,14 +24,22 @@ class Aztro extends Component {
   render() {
     return (
       <div className="astroBox">
-        Current Date: {this.state.json.current_date} <br />
-        Compatibility: {this.state.json.compatibility} <br />
-        Lucky Number: {this.state.json.lucky_number} <br />
-        Lucky Time: {this.state.json.lucky_time} <br />
-        Color: {this.state.json.color} <br />
-        Date Range: {this.state.json.date_range} <br />
-        Mood: {this.state.json.mood} <br />
-        Description: {this.state.json.description} <br />
+        <span className="astroHeadline">Current Date:</span>{" "}
+        {this.state.json.current_date} <br />
+        <span className="astroHeadline"> Compatibility: </span>
+        {this.state.json.compatibility} <br />
+        <span className="astroHeadline">Lucky Number: </span>
+        {this.state.json.lucky_number} <br />
+        <span className="astroHeadline">Lucky Time: </span>
+        {this.state.json.lucky_time} <br />
+        <span className="astroHeadline"> Color: </span>
+        {this.state.json.color} <br />
+        <span className="astroHeadline">Date Range: </span>
+        {this.state.json.date_range} <br />
+        <span className="astroHeadline"> Mood: </span>
+        {this.state.json.mood} <br />
+        <span className="astroHeadline"> Description:</span>{" "}
+        {this.state.json.description} <br />
       </div>
     );
   }
