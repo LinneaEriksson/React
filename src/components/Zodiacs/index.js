@@ -26,7 +26,9 @@ const Zodiacs = () => {
 
       <form>
         <Button type="submit">
-          <Link to="zodiac">Click to view our about page</Link>
+          <Link className="link" to="zodiac">
+            Read more
+          </Link>
         </Button>
       </form>
     </div>
