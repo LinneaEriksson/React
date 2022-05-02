@@ -21,13 +21,15 @@ const Zodiacs = () => {
   return zodiacs.map((zodiac) => (
     <div className="zodiacContainer">
       <img src={`/images/${zodiac}.jpg`} />
-      {zodiac}
+
       <form>
         <Button
           type="submit"
           /* onClick={() => navigate("/ZodiacInfo")} */
           text="Read more"
-        />
+        >
+          <a href="/ZodiacInfo"></a>
+        </Button>
       </form>
     </div>
   ));
