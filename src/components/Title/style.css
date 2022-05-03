@@ -1,8 +1,7 @@
 .title {
   color: white;
-  font-weight: 900;
   font-size: 60px;
-  font-family: monospace;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #d3385e;
+  font-family: "Titillium Web", sans-serif;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff; */
 }

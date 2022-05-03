@@ -27,7 +27,7 @@ const Zodiacs = () => {
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
 
       <Link className="link" to={`/zodiac/${zodiac}`}>
-        <Button text="Read more" />
+        <Button text="Read more" bg={`var(--${zodiac})`} />
       </Link>
     </div>
   ));

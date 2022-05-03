@@ -32,27 +32,41 @@ const Aztro = (props) => {
         <img src={`/images/${props.name}.jpg`} alt={`zodiac ${props.name}`} />
       </div>
       <div>
-        <AztroHeadline text="hejhej" color="black" />
-        <span className="astroHeadline">Current Date:</span> {json.current_date}{" "}
-        <br />
-        <span className="astroHeadline"> Compatibility: </span>
+        <AztroHeadline text="Current Date: " color={`var(--${props.name})`} />
+        {json.current_date} <br />
+        <AztroHeadline text="Compability: " color={`var(--${props.name})`} />
         {json.compatibility} <br />
-        <span className="astroHeadline">Lucky Number: </span>
+        <AztroHeadline text="Lucky number: " color={`var(--${props.name})`} />
         {json.lucky_number} <br />
-        <span className="astroHeadline">Lucky Time: </span>
+        <AztroHeadline text="Lucky time: " color={`var(--${props.name})`} />
         {json.lucky_time} <br />
-        <span className="astroHeadline"> Color: </span>
+        <AztroHeadline text="Color: " color={`var(--${props.name})`} />
         {json.color} <br />
-        <span className="astroHeadline">Date Range: </span>
+        <AztroHeadline text="Date range: " color={`var(--${props.name})`} />
         {json.date_range} <br />
-        <span className="astroHeadline"> Mood: </span>
+        <AztroHeadline text="Mood: " color={`var(--${props.name})`} />
         {json.mood} <br />
-        <span className="astroHeadline"> Description:</span> {json.description}{" "}
-        <br />
+        <AztroHeadline
+          text="Description: "
+          color={`var(--${props.name})`}
+        />{" "}
+        {json.description} <br />
         <div className="buttonContainer">
-          <Button onClick={() => setDay("yesterday")} text="yesterday"></Button>
-          <Button onClick={() => setDay("today")} text="today"></Button>
-          <Button onClick={() => setDay("tomorrow")} text="tomorrow"></Button>
+          <Button
+            onClick={() => setDay("yesterday")}
+            text="Yesterday"
+            bg={`var(--${props.name})`}
+          ></Button>
+          <Button
+            onClick={() => setDay("today")}
+            text="Today"
+            bg={`var(--${props.name})`}
+          ></Button>
+          <Button
+            onClick={() => setDay("tomorrow")}
+            text="Tomorrow"
+            bg={`var(--${props.name})`}
+          ></Button>
         </div>
       </div>
     </div>
