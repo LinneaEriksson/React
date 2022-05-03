@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Button from "./../Button";
-// import { createContext } from "react";
+import { createContext } from "react";
 
-// const Name = createContext();
+const Name = createContext();
 
 const Zodiacs = () => {
   const zodiacs = [
@@ -22,8 +22,8 @@ const Zodiacs = () => {
     "pisces",
   ];
 
-  return zodiacs.map((zodiac) => (
-    <div className="zodiacContainer">
+  return zodiacs.map((zodiac, index) => (
+    <div className="zodiacContainer" key={`zodiac-${index}`}>
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
 
       <Link className="link" to={`/zodiac/${zodiac}`}>
