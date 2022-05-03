@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Button from "./../Button";
+import AztroHeadline from "../AztroHeadline";
 
 const Aztro = (props) => {
   const [day, setDay] = useState("today");
@@ -31,6 +32,7 @@ const Aztro = (props) => {
         <img src={`/images/${props.name}.jpg`} alt={`zodiac ${props.name}`} />
       </div>
       <div>
+        <AztroHeadline text="hejhej" color="black" />
         <span className="astroHeadline">Current Date:</span> {json.current_date}{" "}
         <br />
         <span className="astroHeadline"> Compatibility: </span>
