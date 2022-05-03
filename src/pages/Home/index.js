@@ -7,8 +7,12 @@ function Home() {
   return (
     <div>
       <section className="startPageSection">
-        <Title title="Hello"></Title>
-        <Zodiacs />
+        <div className="titleWrapper">
+          <Title title="Your daily horoscope"></Title>
+        </div>
+        <div className="zodiacWrapper">
+          <Zodiacs />
+        </div>
       </section>
     </div>
   );

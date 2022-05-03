@@ -1,4 +1,8 @@
 .title {
   color: white;
-  font-weight: 400;
+  font-weight: 900;
+  font-size: 60px;
+  font-family: monospace;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d3385e;
 }
