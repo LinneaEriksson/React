@@ -26,7 +26,7 @@ const Zodiacs = () => {
     <div className="zodiacContainer">
       <img src={`/images/${zodiac}.jpg`} alt={`zodiac ${zodiac}`} />
 
-      <Link className="link" to="zodiac">
+      <Link className="link" to={`/zodiac/${zodiac}`}>
         <Button text="Read more" />
       </Link>
     </div>
