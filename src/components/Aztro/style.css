@@ -70,6 +70,14 @@
     margin-top: -73px;
     margin-left: -40px;
   }
+  .astroBox {
+    font-size: 12px;
+  }
+
+  .imageFrame img {
+    width: 150px;
+    margin-top: 50px;
+  }
 }
 
 .back {
