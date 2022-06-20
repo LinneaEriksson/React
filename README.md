@@ -2,7 +2,10 @@
 
 # This is a ReactAssignment!
 
-Yes, that is what it is!
+School project to create something using React and API.
+We created a website where you can read your daily horoscope.
+
+<a src="https://react-assignment-lilac.vercel.app/">Visit our website here!</a>
 
 # Contributors
 
